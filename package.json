@@ -1,0 +1,14 @@
+{
+  "name": "szent-olaf-utinaplo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Szent Olaf zarándokút — útinapló, helyi szerkeszthető weboldal",
+  "scripts": {
+    "start": "concurrently -k -n cms,site -c yellow,green \"npx decap-server\" \"npx serve . -l 8080\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "decap-server": "^3.2.0",
+    "serve": "^14.2.1"
+  }
+}

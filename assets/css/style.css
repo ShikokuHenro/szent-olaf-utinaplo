@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root{
+  /* --- Színek --- */
+  --pine-950:#141d18;   /* mélyerdő háttér */
+  --pine-900:#1a2620;
+  --pine-800:#243128;   /* panel / kártya háttér */
+  --pine-700:#324137;
+  --stone-500:#8b9086;  /* tompa kőszürke — másodlagos szöveg */
+  --stone-300:#c3c6bd;
+  --moss-400:#7d9a70;   /* moha zöld — link, aktív állapot */
+  --moss-300:#9db392;
+  --birch-100:#ece7da;  /* nyírfakéreg — fő szövegszín világos alapon */
+  --birch-50:#f5f2e9;
+  --lichen-600:#b3702f; /* zuzmó / rozsda — ritka, hangsúlyos akcent */
+
+  --font-display:'Fraunces', serif;
+  --font-body:'Source Serif 4', serif;
+  --font-mono:'JetBrains Mono', monospace;
+
+  --container: 760px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--pine-950);
+  color:var(--birch-100);
+  font-family:var(--font-body);
+  font-size:18px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--moss-300);text-decoration-color:rgba(157,179,146,.35);text-underline-offset:3px;}
+a:hover{color:var(--moss-400);}
+a:focus-visible, button:focus-visible{outline:2px solid var(--lichen-600);outline-offset:3px;}
+
+img{max-width:100%;display:block;}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:6vh 6vw 8vh;
+  background-color:var(--pine-950);
+  background-image:
+    linear-gradient(180deg, rgba(20,29,24,.35) 0%, rgba(20,29,24,.55) 55%, rgba(20,29,24,.96) 100%),
+    url('../img/hero.jpg');
+  background-size:cover;
+  background-position:center;
+}
+/* Ha még nincs feltöltve saját fotó (assets/img/hero.jpg), ez a réteges
+   hegyvonal-illusztráció szolgál helyettesítő háttérként. */
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 100%, rgba(125,154,112,.10), transparent 70%),
+    linear-gradient(180deg,#0f1613 0%, #1a2620 45%, #24312a 100%);
+}
+.hero-eyebrow{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--stone-300);
+  margin:0 0 1.1rem;
+}
+.hero-eyebrow span{color:var(--lichen-600);}
+.hero h1{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-style:italic;
+  font-size:clamp(2.6rem, 7vw, 5.2rem);
+  line-height:1.02;
+  margin:0 0 1.2rem;
+  max-width:14ch;
+  color:var(--birch-50);
+}
+.hero-stats{
+  display:flex;
+  gap:2.2rem;
+  flex-wrap:wrap;
+  margin-top:1.6rem;
+  padding-top:1.6rem;
+  border-top:1px solid rgba(236,231,218,.18);
+}
+.hero-stats div{font-family:var(--font-mono);font-size:13px;color:var(--stone-300);}
+.hero-stats strong{display:block;font-size:1.3rem;color:var(--birch-50);font-weight:500;}
+
+.scroll-cue{
+  position:absolute;
+  left:6vw; bottom:3vh;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--stone-300);
+  display:flex;align-items:center;gap:.6rem;
+}
+.scroll-cue::after{
+  content:"";
+  width:1px;height:34px;
+  background:linear-gradient(var(--moss-400), transparent);
+}
+
+/* ---------- INTRO / bevezető szöveg a lista előtt ---------- */
+.intro{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:9vh 6vw 4vh;
+}
+.intro p{color:var(--stone-300);font-size:1.05rem;}
+.intro .label{
+  font-family:var(--font-mono);
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--moss-400);
+  margin-bottom:.8rem;
+}
+
+/* ---------- FEJEZET-LISTA — az útvonal ---------- */
+.trail{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:2vh 6vw 14vh;
+  position:relative;
+}
+.trail-line{
+  position:absolute;
+  left:calc(6vw + 27px);
+  top:2vh;
+  bottom:14vh;
+  width:1px;
+  background:linear-gradient(var(--pine-700), var(--moss-400) 8%, var(--moss-400) 92%, var(--pine-700));
+  opacity:.55;
+}
+.chapter{
+  position:relative;
+  display:grid;
+  grid-template-columns:56px 1fr;
+  gap:1.4rem;
+  padding:1.35rem 0;
+  align-items:start;
+  text-decoration:none;
+  color:inherit;
+  border-bottom:1px solid rgba(140,150,134,.14);
+  opacity:0;
+  transform:translateY(14px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.chapter.is-visible{opacity:1;transform:none;}
+.chapter:last-of-type{border-bottom:none;}
+
+.chapter-marker{
+  width:56px;height:56px;
+  border-radius:3px;
+  background:var(--pine-800);
+  border:1px solid var(--pine-700);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-mono);
+  font-size:.95rem;
+  color:var(--stone-300);
+  position:relative;
+  z-index:1;
+  transition:border-color .25s ease, color .25s ease, background .25s ease;
+}
+.chapter.is-ready .chapter-marker{color:var(--birch-100);}
+.chapter:hover.is-ready .chapter-marker{
+  border-color:var(--moss-400);
+  color:var(--moss-300);
+  background:var(--pine-700);
+}
+.chapter.is-soon .chapter-marker{color:var(--pine-700);border-style:dashed;}
+
+.chapter-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:1.32rem;
+  margin:0 0 .35rem;
+  color:var(--birch-50);
+  transition:color .2s ease;
+}
+.chapter:hover.is-ready .chapter-title{color:var(--moss-300);}
+.chapter.is-soon .chapter-title{color:var(--stone-500);}
+
+.chapter-teaser{
+  margin:0;
+  color:var(--stone-300);
+  font-size:.98rem;
+  max-width:56ch;
+}
+.chapter.is-soon{cursor:default;}
+.chapter-soon-tag{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--lichen-600);
+}
+
+footer{
+  text-align:center;
+  padding:3rem 6vw 4rem;
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:var(--stone-500);
+  letter-spacing:.05em;
+}
+
+/* ---------- FEJEZET-OLDAL ---------- */
+.chapter-header{
+  padding:9vh 6vw 5vh;
+  border-bottom:1px solid rgba(140,150,134,.16);
+}
+.back-link{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  display:inline-block;
+  margin-bottom:2.4rem;
+}
+.chapter-header .eyebrow{
+  font-family:var(--font-mono);
+  color:var(--moss-400);
+  font-size:13px;
+  letter-spacing:.14em;
+  margin-bottom:.8rem;
+}
+.chapter-header h1{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(2rem, 5vw, 3.2rem);
+  margin:0;
+  max-width:18ch;
+  color:var(--birch-50);
+}
+
+.chapter-body{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:6vh 6vw;
+}
+.chapter-body p{margin:0 0 1.4rem;}
+.chapter-body p.lede::first-letter{
+  font-family:var(--font-display);
+  font-size:3.4rem;
+  font-weight:600;
+  float:left;
+  line-height:.85;
+  padding:.08em .1em 0 0;
+  color:var(--moss-300);
+}
+
+.gallery-section{
+  max-width:960px;
+  margin:2vh auto 10vh;
+  padding:0 6vw;
+}
+.gallery-label{
+  font-family:var(--font-mono);
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--moss-400);
+  margin-bottom:1.3rem;
+  padding-top:2.5rem;
+  border-top:1px solid rgba(140,150,134,.16);
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:10px;
+}
+.gallery-item{
+  aspect-ratio:4/5;
+  background:var(--pine-800);
+  border:1px solid var(--pine-700);
+  border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--stone-500);
+  font-family:var(--font-mono);
+  font-size:11px;
+  text-align:center;
+  padding:.6rem;
+}
+.gallery-item.video::before{
+  content:"▶";
+  display:block;
+  font-size:1.4rem;
+  color:var(--moss-400);
+  margin-bottom:.4rem;
+}
+.gallery-item img{
+  width:100%;height:100%;
+  object-fit:cover;
+  border-radius:1px;
+}
+.gallery-item.has-media{padding:0;overflow:hidden;}
+
+/* Szélesebb, 16:9 videóbeágyazás (pl. YouTube) — a galéria alatt/között, teljes szélességben */
+.video-embed{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  background:var(--pine-800);
+  border:1px solid var(--pine-700);
+  margin:1.6rem 0;
+  overflow:hidden;
+}
+.video-embed iframe{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  border:0;
+}
+
+.chapter-nav{
+  display:flex;
+  justify-content:space-between;
+  gap:1rem;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:4vh 6vw 10vh;
+  border-top:1px solid rgba(140,150,134,.16);
+}
+.chapter-nav a{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--stone-300);
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+  max-width:45%;
+}
+.chapter-nav a span{
+  font-family:var(--font-display);
+  text-transform:none;
+  letter-spacing:0;
+  font-style:italic;
+  font-size:1.05rem;
+  color:var(--birch-100);
+}
+.chapter-nav a.next{text-align:right;align-items:flex-end;}
+.chapter-nav a:hover span{color:var(--moss-300);}
+.chapter-nav a.disabled{color:var(--pine-700);pointer-events:none;}
+.chapter-nav a.disabled span{color:var(--pine-700);}
+
+@media (max-width: 640px){
+  .gallery{grid-template-columns:repeat(2, 1fr);}
+  .trail-line{left:calc(6vw + 22px);}
+  .chapter{grid-template-columns:46px 1fr;gap:1rem;}
+  .chapter-marker{width:46px;height:46px;font-size:.8rem;}
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  .chapter{transition:none;opacity:1;transform:none;}
+}

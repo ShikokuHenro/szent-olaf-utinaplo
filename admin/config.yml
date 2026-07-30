@@ -1,0 +1,37 @@
+backend:
+  name: proxy
+  proxy_url: http://localhost:8081/api/v1
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "fejezetek"
+    label: "Fejezetek"
+    label_singular: "Fejezet"
+    folder: "content/fejezetek"
+    create: false
+    delete: false
+    format: "frontmatter"
+    identifier_field: "title"
+    summary: "{{roman}}. {{title}}"
+    sortable_fields: ["order"]
+    fields:
+      - {label: "Római szám", name: "roman", widget: "string", hint: "pl. I, II, III… — csak a megjelenítéshez kell"}
+      - {label: "Sorrend", name: "order", widget: "number", value_type: "int"}
+      - {label: "Cím", name: "title", widget: "string"}
+      - {label: "Rövid előnézeti szöveg (a főoldali listában)", name: "teaser", widget: "text"}
+      - {label: "Kész — jelenjen meg kattinthatóként a főoldalon", name: "ready", widget: "boolean", default: false}
+      - {label: "Fejezet szövege", name: "body", widget: "markdown"}
+      - label: "Galéria"
+        name: "gallery"
+        widget: "list"
+        default: []
+        label_singular: "Kép"
+        field: {label: "Kép", name: "src", widget: "image"}
+      - label: "Videók"
+        name: "videos"
+        widget: "list"
+        default: []
+        label_singular: "Videó"
+        hint: "Illeszd be a teljes YouTube linket (pl. https://www.youtube.com/watch?v=...)"
