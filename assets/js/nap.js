@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const nap = napok[idx];
 
   if (!nap) {
-    body.innerHTML = '<p style="padding:4rem;color:#ece7da">Ez a nap nem található. <a href="/fejezetek/zarandoklat.html">Vissza a zarándoklathoz</a></p>';
+    body.innerHTML = `<p style="padding:4rem;color:#ece7da">Ez a nap nem található. <a href="${SITE_ROOT}/fejezetek/zarandoklat.html">Vissza a zarándoklathoz</a></p>`;
     return;
   }
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const headerBg = document.getElementById('header-bg');
   if (headerBg && nap.data.sorszam) {
-    headerBg.style.backgroundImage = `url('/assets/img/profiles/${String(nap.data.sorszam).padStart(2, '0')}.png')`;
+    headerBg.style.backgroundImage = `url('${SITE_ROOT}/assets/img/profiles/${String(nap.data.sorszam).padStart(2, '0')}.png')`;
   }
 
   const statsWrap = document.getElementById('day-stats');
@@ -213,14 +213,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const navPrev = document.getElementById('nav-prev');
   const navNext = document.getElementById('nav-next');
   if (prev) {
-    navPrev.href = `/napok/nap.html?slug=${prev.slug}`;
+    navPrev.href = `${SITE_ROOT}/napok/nap.html?slug=${prev.slug}`;
     navPrev.classList.remove('disabled');
     navPrev.querySelector('span').textContent = prev.data.cim || `${prev.data.sorszam}. nap`;
   }
   if (next) {
     navNext.querySelector('span').textContent = next.data.cim || `${next.data.sorszam}. nap`;
     if (next.data.kesz) {
-      navNext.href = `/napok/nap.html?slug=${next.slug}`;
+      navNext.href = `${SITE_ROOT}/napok/nap.html?slug=${next.slug}`;
       navNext.classList.remove('disabled');
     }
   }
