@@ -42,7 +42,7 @@ async function loadAllChapters() {
 }
 
 async function loadSettings() {
-  const res = await fetch('/content/settings.md', { cache: 'no-store' });
+  const res = await fetch('content/settings.md', { cache: 'no-store' });
   if (!res.ok) throw new Error('Nem található a settings.md');
   const raw = await res.text();
   return parseFrontmatter(raw, 'settings').data;
