@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (nap.data.kesz) {
       return `
-        <a class="chapter is-ready" href="/napok/nap.html?slug=${nap.slug}">
+        <a class="chapter is-ready" href="${SITE_ROOT}/napok/nap.html?slug=${nap.slug}">
           <span class="chapter-marker">${num}</span>
           <span>
             <h2 class="chapter-title">${cim}</h2>
