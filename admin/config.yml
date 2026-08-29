@@ -2,8 +2,8 @@ backend:
   name: proxy
   proxy_url: http://localhost:8081/api/v1
 
-media_folder: "assets/img"
-public_folder: "/assets/img"
+media_folder: "assets/img/globalis"
+public_folder: "/assets/img/globalis"
 
 collections:
   - name: "fejezetek"
@@ -28,10 +28,78 @@ collections:
         widget: "list"
         default: []
         label_singular: "Kép"
-        field: {label: "Kép", name: "src", widget: "image"}
+        fields:
+          - {label: "Kép", name: "src", widget: "image", media_folder: "/assets/img/{{slug}}"}
+          - {label: "Felirat (opcionális)", name: "caption", widget: "string", required: false, hint: "Halványan jelenik meg a kép alján. Teljes képernyős nézetben nem látszik."}
+          - {label: "Megtekintése semmilyen korosztálynak nem ajánlott! (elhomályosítva jelenik meg, amíg valaki rá nem kattint)", name: "erzekeny", widget: "boolean", default: false, required: false}
+          - {label: "Csíny kép (opcionális, tréfás félrevezetés)", name: "csiny", widget: "image", required: false, hint: "Ha ki van töltve, a rácsban a valódi kép látszik, de rákattintva EZ a kép nyílik meg nagyban helyette.", media_folder: "/assets/img/{{slug}}"}
       - label: "Videók"
         name: "videos"
         widget: "list"
         default: []
         label_singular: "Videó"
-        hint: "Illeszd be a teljes YouTube linket (pl. https://www.youtube.com/watch?v=...)"
+        fields:
+          - {label: "YouTube link", name: "url", widget: "string", hint: "Illeszd be a teljes YouTube linket (pl. https://www.youtube.com/watch?v=...)"}
+      - {label: "Facebook poszt linkje (hozzászólásokhoz)", name: "facebook_url", widget: "string", required: false, hint: "Tedd ki a fejezetet bemutató posztot a Facebook oldaladra, majd illeszd be ide a poszt linkjét. Üresen hagyva a gomb nem jelenik meg."}
+      - {label: "Facebook gomb szövege (opcionális)", name: "facebook_label", widget: "string", required: false, hint: "Ha üresen hagyod, az alapértelmezett \"Kommenteld a Facebookon\" szöveg jelenik meg."}
+      - {label: "Egyedi link felülbírálás (opcionális)", name: "link", widget: "string", required: false, hint: "Ha ki van töltve, a főoldalon erre a linkre visz kattintáskor a szokásos fejezet-oldal helyett. Pl. /fejezetek/zarandoklat.html a napi bontás listájához."}
+
+  - name: "beallitasok"
+    label: "Főoldal"
+    files:
+      - file: "content/settings.md"
+        label: "Főoldal szövegei"
+        name: "homepage"
+        fields:
+          - {label: "Felső sor (a cím fölött)", name: "hero_eyebrow", widget: "string"}
+          - {label: "Főcím", name: "hero_title", widget: "string"}
+          - label: "Statisztikák (4 doboz a cím alatt)"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Érték", name: "value", widget: "string"}
+              - {label: "Címke", name: "label", widget: "string"}
+          - {label: "Bevezető felirat", name: "intro_label", widget: "string"}
+          - {label: "Bevezető szöveg", name: "intro_text", widget: "text"}
+          - {label: "Támogatás gomb szövege", name: "support_label", widget: "string", required: false}
+          - {label: "Támogatás gomb linkje", name: "support_url", widget: "string", required: false, hint: "Pl. Buy Me a Coffee / Ko-fi / PayPal.me link. Üresen hagyva a gomb nem jelenik meg az oldalon."}
+
+  - name: "napok"
+    label: "A zarándoklat — napok"
+    folder: "content/napok"
+    create: false
+    delete: false
+    format: "frontmatter"
+    identifier_field: "cim"
+    summary: "{{sorszam}}. — {{cim}}"
+    sortable_fields: ["sorszam"]
+    fields:
+      - {label: "Sorszám", name: "sorszam", widget: "number", value_type: "int"}
+      - {label: "Cím", name: "cim", widget: "string"}
+      - {label: "Dátum", name: "datum", widget: "string", required: false, hint: "pl. 2026. 06. 14."}
+      - {label: "Kész — jelenjen meg kattinthatóként a listában", name: "kesz", widget: "boolean", default: false}
+      - {label: "Táv", name: "tav", widget: "string", required: false, hint: "pl. 25.2 km"}
+      - {label: "Szintemelkedés", name: "szint", widget: "string", required: false, hint: "pl. 483 m"}
+      - {label: "Úton töltött idő", name: "ido", widget: "string", required: false, hint: "pl. 4h 49m"}
+      - {label: "Lépésszám", name: "lepes", widget: "string", required: false}
+      - {label: "Napi költés", name: "koltes", widget: "string", required: false, hint: "pl. 450 NOK"}
+      - {label: "Szöveg", name: "body", widget: "markdown"}
+      - label: "Galéria"
+        name: "gallery"
+        widget: "list"
+        default: []
+        label_singular: "Kép"
+        fields:
+          - {label: "Kép", name: "src", widget: "image", media_folder: "/assets/img/{{slug}}"}
+          - {label: "Felirat (opcionális)", name: "caption", widget: "string", required: false, hint: "Halványan jelenik meg a kép alján. Teljes képernyős nézetben nem látszik."}
+          - {label: "Evés közben nem ajánlott (elhomályosítva jelenik meg, amíg valaki rá nem kattint)", name: "erzekeny", widget: "boolean", default: false, required: false}
+          - {label: "Csíny kép (opcionális, tréfás félrevezetés)", name: "csiny", widget: "image", required: false, hint: "Ha ki van töltve, a rácsban a valódi kép látszik, de rákattintva EZ a kép nyílik meg nagyban helyette.", media_folder: "/assets/img/{{slug}}"}
+      - label: "Videók"
+        name: "videos"
+        widget: "list"
+        default: []
+        label_singular: "Videó"
+        fields:
+          - {label: "YouTube link", name: "url", widget: "string", hint: "Illeszd be a teljes YouTube linket (pl. https://www.youtube.com/watch?v=...)"}
+      - {label: "Facebook poszt linkje (hozzászólásokhoz)", name: "facebook_url", widget: "string", required: false}
+      - {label: "Facebook gomb szövege (opcionális)", name: "facebook_label", widget: "string", required: false}

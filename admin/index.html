@@ -11,5 +11,57 @@
 <body>
   <!-- Include the script that builds the CMS UI -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <script>
+    CMS.registerEditorComponent({
+      id: "styled-text",
+      label: "Stílusos szöveg",
+      fields: [
+        { name: 'text', label: 'Szöveg', widget: 'string' },
+        {
+          name: 'color', label: 'Szín', widget: 'select', default: 'moss',
+          options: [
+            { label: 'Halvány (alap szövegszín)', value: 'birch' },
+            { label: 'Moha zöld', value: 'moss' },
+            { label: 'Zuzmó / rozsda', value: 'lichen' },
+            { label: 'Kő szürke', value: 'stone' }
+          ]
+        },
+        {
+          name: 'size', label: 'Méret', widget: 'select', default: 'normal',
+          options: [
+            { label: 'Kicsi', value: 'small' },
+            { label: 'Normál', value: 'normal' },
+            { label: 'Nagy', value: 'large' },
+            { label: 'Óriás', value: 'huge' }
+          ]
+        },
+        {
+          name: 'font', label: 'Betűtípus', widget: 'select', default: 'normal',
+          options: [
+            { label: 'Normál', value: 'normal' },
+            { label: 'Rovásírás', value: 'runic' },
+            { label: 'Gépelt (mono)', value: 'mono' }
+          ]
+        }
+      ],
+      pattern: /^\{\{style color="([a-z]*)" size="([a-z]*)" font="([a-z]*)"\}\}([\s\S]*?)\{\{\/style\}\}$/,
+      fromBlock: function (match) {
+        return { color: match[1], size: match[2], font: match[3], text: match[4] };
+      },
+      toBlock: function (obj) {
+        return '{{style color="' + obj.color + '" size="' + obj.size + '" font="' + obj.font + '"}}' + obj.text + '{{/style}}';
+      },
+      toPreview: function (obj) {
+        var colorMap = { birch: '#ece7da', moss: '#9db392', lichen: '#b3702f', stone: '#c3c6bd' };
+        var sizeMap = { small: '0.85em', normal: '1em', large: '1.6em', huge: '2.4em' };
+        var fontMap = { normal: 'inherit', runic: "'Noto Sans Runic', sans-serif", mono: 'monospace' };
+        var style = 'color:' + (colorMap[obj.color] || colorMap.moss) + ';'
+          + 'font-size:' + (sizeMap[obj.size] || '1em') + ';'
+          + 'font-family:' + (fontMap[obj.font] || 'inherit') + ';';
+        return '<span style="' + style + '">' + obj.text + '</span>';
+      }
+    });
+  </script>
 </body>
 </html>

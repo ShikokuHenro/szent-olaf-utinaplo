@@ -1,6 +1,31 @@
 // index.js — a főoldal fejezetlistájának felépítése a content/fejezetek/*.md fájlokból
 
 document.addEventListener('DOMContentLoaded', async () => {
+  // Főoldal szövegei (hero, bevezető, támogatás gomb)
+  try {
+    const s = await loadSettings();
+    document.getElementById('hero-eyebrow').textContent = s.hero_eyebrow || '';
+    document.getElementById('hero-title').textContent = s.hero_title || '';
+    document.getElementById('intro-label').textContent = s.intro_label || '';
+    document.getElementById('intro-text').textContent = s.intro_text || '';
+
+    const statsWrap = document.getElementById('hero-stats');
+    const stats = s.stats || [];
+    statsWrap.innerHTML = stats.map(st => `
+      <div><strong>${escapeHtml(st.value || '')}</strong>${escapeHtml(st.label || '')}</div>
+    `).join('');
+
+    const supportBtn = document.getElementById('support-btn');
+    if (s.support_url) {
+      supportBtn.href = s.support_url;
+      supportBtn.textContent = s.support_label || 'Támogass';
+      supportBtn.hidden = false;
+    }
+  } catch (e) {
+    console.error('Nem sikerült betölteni a főoldal szövegeit:', e);
+  }
+
+  // Fejezetlista
   const trail = document.getElementById('trail-list');
   if (!trail) return;
 
@@ -19,8 +44,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const teaser = escapeHtml(ch.data.teaser || 'Ez a fejezet még íróasztalon van.');
 
     if (ch.data.ready) {
+      const href = ch.data.link || `/fejezetek/fejezet.html?slug=${ch.slug}`;
       return `
-        <a class="chapter is-ready" href="/fejezetek/fejezet.html?slug=${ch.slug}">
+        <a class="chapter is-ready" href="${href}">
           <span class="chapter-marker">${roman}</span>
           <span>
             <h2 class="chapter-title">${title}</h2>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Szent Olaf zarándokút — napi bejegyzés</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="chapter-header">
+  <a class="back-link" href="/fejezetek/zarandoklat.html">← Vissza a zarándoklathoz</a>
+  <p class="eyebrow" id="eyebrow">Nap</p>
+  <h1 id="nap-title">Betöltés…</h1>
+  <div class="header-bg" id="header-bg"></div>
+</header>
+
+<div class="day-stats" id="day-stats"></div>
+
+<main class="chapter-body" id="chapter-body"></main>
+
+<section class="gallery-section" id="gallery-section">
+  <p class="gallery-label">Képek és videók</p>
+  <div class="gallery" id="gallery"></div>
+  <div id="videos"></div>
+</section>
+
+<div class="fb-comment-wrap">
+  <a class="fb-comment-btn" id="fb-comment-btn" href="#" target="_blank" rel="noopener" hidden>Kommenteld a Facebookon</a>
+</div>
+
+<nav class="chapter-nav">
+  <a class="disabled" id="nav-prev">← Előző nap<span></span></a>
+  <a class="next disabled" id="nav-next">Következő nap →<span></span></a>
+</nav>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Bezárás">✕</button>
+  <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Előző kép">‹</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Következő kép">›</button>
+  <button class="lightbox-reveal-btn" id="lightbox-reveal" hidden>Megnézem mégis</button>
+  <p class="lightbox-caption" id="lightbox-caption" hidden></p>
+</div>
+
+<script src="/assets/vendor/js-yaml.min.js"></script>
+<script src="/assets/vendor/marked.min.js"></script>
+<script src="/assets/js/content.js"></script>
+<script src="/assets/js/nap.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Runic&display=swap');
 
 :root{
   /* --- Színek --- */
@@ -14,11 +14,11 @@
   --birch-50:#f5f2e9;
   --lichen-600:#b3702f; /* zuzmó / rozsda — ritka, hangsúlyos akcent */
 
-  --font-display:'Fraunces', serif;
-  --font-body:'Source Serif 4', serif;
+  --font-display:'Fraunces', 'Noto Sans Runic', serif;
+  --font-body:'Source Serif 4', 'Noto Sans Runic', serif;
   --font-mono:'JetBrains Mono', monospace;
 
-  --container: 760px;
+  --container: 900px;
 }
 
 *{box-sizing:border-box;}
@@ -213,6 +213,28 @@ footer{
   letter-spacing:.05em;
 }
 
+.support-btn{
+  position:fixed;
+  right:24px;bottom:24px;
+  z-index:50;
+  background:var(--pine-800);
+  border:1px solid var(--lichen-600);
+  color:var(--birch-50);
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.04em;
+  padding:.75rem 1.1rem;
+  border-radius:999px;
+  text-decoration:none;
+  box-shadow:0 4px 16px rgba(0,0,0,.35);
+  transition:background .2s ease, transform .2s ease;
+}
+.support-btn:hover{background:var(--lichen-600);color:var(--pine-950);transform:translateY(-1px);}
+.support-btn[hidden]{display:none;}
+@media (max-width:640px){
+  .support-btn{right:16px;bottom:16px;padding:.65rem .9rem;font-size:11px;}
+}
+
 /* ---------- FEJEZET-OLDAL ---------- */
 .chapter-header{
   padding:9vh 6vw 5vh;
@@ -248,14 +270,30 @@ footer{
   padding:6vh 6vw;
 }
 .chapter-body p{margin:0 0 1.4rem;}
-.chapter-body p.lede::first-letter{
+.chapter-body p:first-of-type{
+  /* Az automatikus nagybetű szándékosan levéve — lásd .rune-large / .initial-cap
+     osztályokat lentebb, amivel bárhol, kézzel kijelölhető egy nagy kezdőbetű/rúna. */
+}
+
+.rune-large, .initial-cap{
   font-family:var(--font-display);
-  font-size:3.4rem;
+  font-size:4.4rem;
   font-weight:600;
   float:left;
-  line-height:.85;
-  padding:.08em .1em 0 0;
+  line-height:.78;
+  padding:.05em .12em 0 0;
+  margin-top:-.05em;
   color:var(--moss-300);
+}
+
+.rune-divider{
+  display:block;
+  clear:both;
+  text-align:center;
+  margin:2.4rem auto;
+  font-family:var(--font-display);
+  font-size:1.7rem;
+  color:var(--lichen-600);
 }
 
 .gallery-section{
@@ -287,7 +325,11 @@ footer{
   font-size:11px;
   text-align:center;
   padding:.6rem;
+  position:relative;
+  cursor:pointer;
 }
+.gallery-item.has-media{padding:0;overflow:hidden;}
+.gallery-item.has-media:focus-visible{outline:2px solid var(--lichen-600);outline-offset:2px;}
 .gallery-item.video::before{
   content:"▶";
   display:block;
@@ -299,8 +341,96 @@ footer{
   width:100%;height:100%;
   object-fit:cover;
   border-radius:1px;
+  transition:transform .3s ease;
 }
-.gallery-item.has-media{padding:0;overflow:hidden;}
+.gallery-item.has-media:hover img{transform:scale(1.03);}
+
+.fb-comment-wrap{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 6vw 3vh;
+  text-align:center;
+}
+.fb-comment-btn{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.05em;
+  color:var(--birch-100);
+  background:var(--pine-800);
+  border:1px solid var(--moss-400);
+  padding:.7rem 1.3rem;
+  border-radius:999px;
+  text-decoration:none;
+  transition:background .2s ease, color .2s ease;
+}
+.fb-comment-btn:hover{background:var(--moss-400);color:var(--pine-950);}
+.fb-comment-btn[hidden]{display:none;}
+
+/* Lightbox — teljes képernyős nézet, felirat nélkül */
+.lightbox{
+  position:fixed;inset:0;
+  background:rgba(10,15,12,.95);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  z-index:100;
+  padding:6vh 5vw;
+  animation:lightbox-fade .18s ease;
+}
+.lightbox[hidden]{display:none;}
+.lightbox-img{
+  max-width:100%;max-height:calc(100% - 70px);
+  object-fit:contain;
+  border:1px solid var(--pine-700);
+}
+.lightbox-close{
+  position:absolute;top:20px;right:24px;
+  width:42px;height:42px;
+  background:var(--pine-800);
+  border:1px solid var(--stone-500);
+  color:var(--birch-100);
+  border-radius:2px;
+  font-size:17px;
+  line-height:1;
+  cursor:pointer;
+  transition:border-color .2s ease, color .2s ease;
+}
+.lightbox-close:hover{border-color:var(--moss-400);color:var(--moss-300);}
+.lightbox-arrow{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:48px;height:48px;
+  background:var(--pine-800);
+  border:1px solid var(--stone-500);
+  color:var(--birch-100);
+  border-radius:50%;
+  font-size:26px;
+  line-height:1;
+  cursor:pointer;
+  transition:border-color .2s ease, color .2s ease;
+}
+.lightbox-arrow:hover{border-color:var(--moss-400);color:var(--moss-300);}
+.lightbox-prev{left:16px;}
+.lightbox-next{right:16px;}
+.lightbox-caption{
+  margin-top:18px;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:25px;
+  letter-spacing:.02em;
+  color:var(--birch-100);
+  max-width:90%;
+  pointer-events:none;
+}
+.lightbox-caption[hidden]{display:none;}
+@media (max-width:640px){
+  .lightbox-arrow{width:40px;height:40px;font-size:22px;}
+  .lightbox-prev{left:8px;}
+  .lightbox-next{right:8px;}
+}
+@keyframes lightbox-fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){
+  .lightbox{animation:none;}
+  .gallery-item.has-media:hover img{transform:none;}
+}
 
 /* Szélesebb, 16:9 videóbeágyazás (pl. YouTube) — a galéria alatt/között, teljes szélességben */
 .video-embed{
@@ -362,4 +492,127 @@ footer{
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto;}
   .chapter{transition:none;opacity:1;transform:none;}
+}
+
+/* ===== Napi statisztika-piktogramok (A zarándoklat / napok) ===== */
+.day-stats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2.2rem;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 6vw 5vh;
+}
+.day-stat{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.35rem;
+  min-width:64px;
+}
+.day-stat-icon{
+  color:var(--moss-300);
+  display:flex;
+}
+.day-stat-value{
+  font-family:var(--font-mono);
+  font-size:.95rem;
+  font-weight:500;
+  color:var(--birch-100);
+}
+.day-stat-label{
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--stone-500);
+  letter-spacing:.03em;
+}
+@media (max-width:640px){
+  .day-stats{gap:1.4rem;}
+  .day-stat{min-width:52px;}
+}
+.chapter-body h2{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:1.5rem;
+  color:var(--birch-50);
+  margin:2.4rem 0 1rem;
+  padding-top:1.6rem;
+  border-top:1px solid rgba(140,150,134,.16);
+}
+.chapter-body h2:first-of-type{
+  margin-top:0;
+  padding-top:0;
+  border-top:none;
+}
+#nap-title{
+  max-width:34ch;
+}
+.chapter-header{ position:relative; overflow:hidden; }
+.chapter-header > *:not(.header-bg){ position:relative; z-index:1; }
+.header-bg{
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background-size:cover;
+  background-position:bottom center;
+  pointer-events:none;
+}
+/* ===== "Megtekintése semmilyen korosztálynak nem ajánlott" — kényes tartalmú galéria-képek ===== */
+.gallery-item.sensitive img{
+  filter: blur(22px) saturate(0.7);
+  transition: filter .35s ease;
+}
+.gallery-item.sensitive.revealed img{
+  filter: none;
+}
+.sensitive-overlay{
+  position:absolute; inset:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:.4rem;
+  background:rgba(20,29,24,.35);
+  font-family:var(--font-mono);
+  text-align:center; padding:1rem;
+  pointer-events:none;
+}
+.gallery-item.sensitive.revealed .sensitive-overlay{ display:none; }
+.sensitive-overlay .icon{ font-size:20px; color:var(--lichen-600); }
+.sensitive-overlay .label{ font-size:10.5px; letter-spacing:.05em; color:var(--birch-100); text-transform:uppercase; }
+.sensitive-overlay .sub{ font-size:9.5px; color:var(--stone-300); }
+
+/* Ugyanez a lightboxban is — ha valaki a rácsban még nem oldotta fel, nagyítva se legyen éles */
+.lightbox-img.sensitive{
+  filter: blur(28px) saturate(0.7);
+}
+.lightbox-reveal-btn{
+  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  font-family:var(--font-mono); font-size:12px; letter-spacing:.05em;
+  color:var(--birch-100); background:var(--pine-800); border:1px solid var(--lichen-600);
+  padding:.7rem 1.2rem; border-radius:999px; cursor:pointer;
+}
+.lightbox-reveal-btn[hidden]{ display:none; }
+.chapter-body img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2.2rem auto;
+  border-radius: 2px;
+  border: 1px solid var(--pine-700);
+}
+.chapter-body figure{
+  margin: 2.2rem 0;
+}
+.chapter-body figure img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 1px solid var(--pine-700);
+}
+.chapter-body figcaption{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--stone-300);
+  text-align: center;
+  margin-top: .7rem;
+  padding: 0 1rem;
 }

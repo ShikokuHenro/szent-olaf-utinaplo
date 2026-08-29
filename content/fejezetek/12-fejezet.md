@@ -1,10 +1,11 @@
 ---
-roman: "XII"
+roman: XII
 order: 12
-title: "Cím hamarosan"
-teaser: "Ez a fejezet még íróasztalon van."
-ready: false
+title: A zarándoklat
+teaser: "950.000 lépés, 19 nap, 670 kilométer. "
+ready: true
 gallery: []
 videos: []
+link: /fejezetek/zarandoklat.html
 ---
-*Ez a fejezet még csiszolás alatt áll — hamarosan itt lesz a teljes szöveg.*
+Oslótól Trondheimig, napról - napra, lépésről - lépésre.

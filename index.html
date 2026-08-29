@@ -10,23 +10,15 @@
 <body>
 
 <header class="hero">
-  <p class="hero-eyebrow"><span>I.</span> Gudbrandsdalsleden · Oslo — Trondheim</p>
-  <h1>Szent Olaf<br>zarándokút</h1>
-  <div class="hero-stats">
-    <div><strong>~670 km</strong>gyalogolva összesen</div>
-    <div><strong>2</strong>nekifutás, 2025–2026</div>
-    <div><strong>19 nap</strong>a célba érésig</div>
-    <div><strong>Nidaros</strong>a végállomás</div>
-  </div>
-  <div class="scroll-cue">Az út</div>
+  <p class="hero-eyebrow" id="hero-eyebrow"></p>
+  <h1 id="hero-title"></h1>
+  <div class="hero-stats" id="hero-stats"></div>
+  <div class="scroll-cue"></div>
 </header>
 
 <section class="intro">
-  <p class="label">Bevezető helyett</p>
-  <p>2024-ben határoztam el, 2025-ben vágtam neki — és kilenc nap, 270 kilométer után úgy felborultam, mint egy
-  büdösbogár. Egy évvel később újra elindultam, és tizenkilenc nap, majdnem 670 kilométer után elértem Nidaros
-  katedrálisát. Ez a napló erről a két éven át ívelő kalandról szól: a felkészülésről, a felszerelésről, a
-  hibákról, a szállásokról és mindarról, amit ezen az utat útközben megtanultam.</p>
+  <p class="label" id="intro-label"></p>
+  <p id="intro-text"></p>
 </section>
 
 <nav class="trail" aria-label="Fejezetek">
@@ -36,7 +28,14 @@
   </div>
 </nav>
 
-<footer>Szent Olaf zarándokút — útinapló · Nidaros felé, gyalog</footer>
+<footer>KÉSZÜLT: 2026 | 
+KAPCSOLAT: <span id="contact-email"></span></footer>
+<script>
+document.getElementById('contact-email').textContent = ['shikokuhenro','freemail.hu'].join('@');
+</script>
+
+<a class="support-btn" id="support-btn" href="#" target="_blank" rel="noopener" hidden></a>
+
 
 <script src="/assets/vendor/js-yaml.min.js"></script>
 <script src="/assets/js/content.js"></script>
