@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const teaser = escapeHtml(ch.data.teaser || 'Ez a fejezet még íróasztalon van.');
 
     if (ch.data.ready) {
-      const href = ch.data.link || `/fejezetek/fejezet.html?slug=${ch.slug}`;
+      const href = ch.data.link || `fejezetek/fejezet.html?slug=${ch.slug}`;
       return `
         <a class="chapter is-ready" href="${href}">
           <span class="chapter-marker">${roman}</span>
