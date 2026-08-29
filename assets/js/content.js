@@ -1,6 +1,8 @@
 // content.js — a fejezet-fájlok beolvasása és feldolgozása
 // A CMS ide menti a fejezeteket: /content/fejezetek/<slug>.md (frontmatter + markdown szöveg)
-
+const SITE_ROOT = location.hostname.endsWith('github.io')
+  ? '/szent-olaf-utinaplo'
+  : '';
 const CHAPTER_SLUGS = [
   '01-bevezeto', '02-tortenete', '03-miert-szuletett', '04-miert-zarandokolok',
   '05-miert-a-szent-olaf', '06-elso-probalkozas', '07-felkeszules', '08-felszereles',
@@ -26,7 +28,7 @@ function parseFrontmatter(raw, slug) {
 }
 
 async function loadChapter(slug) {
-  const res = await fetch(`content/fejezetek/${slug}.md`, { cache: 'no-store' });
+  const res = await fetch(`${SITE_ROOT}/content/fejezetek/${slug}.md`, { cache: 'no-store' });
   if (!res.ok) throw new Error('Nem található fejezet: ' + slug);
   const raw = await res.text();
   return parseFrontmatter(raw, slug);
@@ -42,7 +44,7 @@ async function loadAllChapters() {
 }
 
 async function loadSettings() {
-  const res = await fetch('content/settings.md', { cache: 'no-store' });
+  const res = await fetch(`${SITE_ROOT}/content/settings.md`, { cache: 'no-store' });
   if (!res.ok) throw new Error('Nem található a settings.md');
   const raw = await res.text();
   return parseFrontmatter(raw, 'settings').data;
@@ -105,7 +107,7 @@ const NAP_SLUGS = [
 ];
 
 async function loadNap(slug) {
-  const res = await fetch(`/content/napok/${slug}.md`, { cache: 'no-store' });
+  const res = await fetch(`${SITE_ROOT}/content/napok/${slug}.md`, { cache: 'no-store' });
   if (!res.ok) throw new Error('Nem található nap: ' + slug);
   const raw = await res.text();
   return parseFrontmatter(raw, slug);
