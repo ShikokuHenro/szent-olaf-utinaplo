@@ -186,14 +186,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   const navPrev = document.getElementById('nav-prev');
   const navNext = document.getElementById('nav-next');
   if (prev) {
-    navPrev.href = `/fejezetek/fejezet.html?slug=${prev.slug}`;
+    navPrev.href = `${SITE_ROOT}/fejezetek/fejezet.html?slug=${prev.slug}`;
     navPrev.classList.remove('disabled');
     navPrev.querySelector('span').textContent = `${prev.data.roman}. ${prev.data.title}`;
   }
   if (next) {
     navNext.querySelector('span').textContent = `${next.data.roman}. ${next.data.title || 'Cím hamarosan'}`;
     if (next.data.ready) {
-      navNext.href = `/fejezetek/fejezet.html?slug=${next.slug}`;
+      navNext.href = `${SITE_ROOT}/fejezetek/fejezet.html?slug=${next.slug}`;
       navNext.classList.remove('disabled');
     }
   }
