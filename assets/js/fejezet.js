@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const ch = chapters[idx];
 
   if (!ch) {
-    body.innerHTML = '<p style="padding:4rem;color:#ece7da">Ez a fejezet nem található. <a href="/index.html">Vissza a főoldalra</a></p>';
+    body.innerHTML = `<p style="padding:4rem;color:#ece7da">Ez a fejezet nem található. <a href="${SITE_ROOT}/index.html">Vissza a főoldalra</a></p>`;
     return;
   }
 
