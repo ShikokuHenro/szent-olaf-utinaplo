@@ -26,7 +26,7 @@ function parseFrontmatter(raw, slug) {
 }
 
 async function loadChapter(slug) {
-  const res = await fetch(`/content/fejezetek/${slug}.md`, { cache: 'no-store' });
+  const res = await fetch(`content/fejezetek/${slug}.md`, { cache: 'no-store' });
   if (!res.ok) throw new Error('Nem található fejezet: ' + slug);
   const raw = await res.text();
   return parseFrontmatter(raw, slug);
