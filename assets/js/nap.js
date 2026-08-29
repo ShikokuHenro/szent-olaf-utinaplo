@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (gallery.length) {
     galleryGrid.innerHTML = gallery.map((it, i) => `
       <div class="gallery-item has-media${it.erzekeny ? ' sensitive' : ''}" data-index="${i}" tabindex="0" role="button" aria-label="Kép megnyitása nagyban">
-        <img src="${escapeHtml(it.src)}" alt="${escapeHtml(it.caption || cim)}" loading="lazy">
+        <img src="${escapeHtml(it.src.startsWith('/') ? SITE_ROOT + it.src : it.src)}" alt="${escapeHtml(it.caption || cim)}" loading="lazy">
         ${it.erzekeny ? `<div class="sensitive-overlay"><div class="icon">&#9888;</div><div class="label">Evés közben nem ajánlott</div><div class="sub">kattints, ha mégis megnéznéd</div></div>` : ''}
       </div>
     `).join('');
@@ -138,7 +138,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!gallery.length) return;
     currentIndex = (index + gallery.length) % gallery.length;
     const item = gallery[currentIndex];
-    lightboxImg.src = item.csiny || item.src;
+    const lightboxSrc = item.csiny || item.src;
+lightboxImg.src = lightboxSrc.startsWith('/') ? SITE_ROOT + lightboxSrc : lightboxSrc;
     lightboxImg.alt = item.caption || cim;
     if (item.caption) {
       lightboxCaption.textContent = item.caption;

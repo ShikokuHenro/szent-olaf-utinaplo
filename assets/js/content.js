@@ -153,12 +153,14 @@ function openLinksInNewTab(container) {
   const renderer = new marked.Renderer();
 renderer.image = function (token) {
   const { href, title, text } = token;
+  const imageHref = href.startsWith('/') ? SITE_ROOT + href : href;
   const parts = (title || '').split('|');
   const caption = parts[0] || '';
-  const prank = parts[1] || '';
+  const prankRaw = parts[1] || '';
+  const prank = prankRaw.startsWith('/') ? SITE_ROOT + prankRaw : prankRaw;
   const prankCaption = parts[2] || '';
   const cap = caption ? `<figcaption>${caption}</figcaption>` : '';
-  return `<figure><img src="${href}" alt="${text || ''}" data-inline-lightbox="1" data-caption="${caption}" data-prank="${prank}" data-prank-caption="${prankCaption}" loading="lazy">${cap}</figure>`;
+  return `<figure><img src="${imageHref}" alt="${text || ''}" data-inline-lightbox="1" data-caption="${caption}" data-prank="${prank}" data-prank-caption="${prankCaption}" loading="lazy">${cap}</figure>`;
 };
   marked.use({ renderer });
 })();
