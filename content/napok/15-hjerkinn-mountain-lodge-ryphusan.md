@@ -42,7 +42,7 @@ gallery:
     caption: Gáz el volt zárva, főzni nem lehetett, de volt pár nyalánkság.
   - erzekeny: false
     src: /assets/img/15-nap-hjerkinn-fjellstue-–-ryphusan/img_20260629_050758.webp
-    caption: Kibeba..ottul hálás vagyok, hogy itt lehettem!
+    caption: Mérhetetlenül hálás vagyok, hogy itt lehettem!
 videos:
   - url: https://youtube.com/shorts/sl5NzRn9crU
   - url: https://youtube.com/shorts/BXPqEtKDiwM?feature=share
