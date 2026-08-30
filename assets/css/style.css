@@ -573,6 +573,12 @@ footer{
   text-align:center; padding:1rem;
   pointer-events:none;
 }
+@media (max-width:640px){
+  .header-bg{
+    background-size:contain;
+    background-repeat:no-repeat;
+  }
+}
 .gallery-item.sensitive.revealed .sensitive-overlay{ display:none; }
 .sensitive-overlay .icon{ font-size:20px; color:var(--lichen-600); }
 .sensitive-overlay .label{ font-size:10.5px; letter-spacing:.05em; color:var(--birch-100); text-transform:uppercase; }
