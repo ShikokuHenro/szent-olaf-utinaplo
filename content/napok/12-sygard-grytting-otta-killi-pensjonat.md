@@ -43,6 +43,27 @@ gallery:
   - erzekeny: false
     src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/12-nap-img_20260625_164523.webp
     caption: "Ott a célpont: Otta"
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260623_122248.webp
+    caption: Hátizsákos troll.
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260625_065248.webp
+    caption: Remélem ez egy kedves troll!
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260625_081939.webp
+    caption: Lovas, kutyás.
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260701_061055.webp
+    caption: Trollmama és trollkölyök?
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260701_093514.webp
+    caption: Egeres, gombás.
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260701_102507.webp
+    caption: Farm, ahol élünk.
+  - erzekeny: false
+    src: /assets/img/12-nap-sygard-grytting-–-killi-pensjonat/img_20260701_102512.webp
+    caption: Másik farm, ahol mások élnek.
 videos:
   - url: https://youtube.com/shorts/dZAy8d3j-g0
   - url: https://youtube.com/shorts/4dOiVL8yvuk
@@ -77,7 +98,11 @@ Később a fák közül kibukkanva egy rét tárult elém, az út mentén pedig 
 
 ![](/assets/img/globalis/12-nap-img_20260625_092207.jpg "WTF?")
 
-Gyors szelfi után indultam tovább Kvamba. Ott beugrottam egy KIWI-be, mert a korábbi meggondolatlan vinstrai kitérő során csak egy benzinkútig jutottam el, ahol nem találtam normális ennivalót. Persze ez is egy kis kitérőt jelentett, de akkor már nem foglalkoztam ezzel. Megebédeltem, pihentem egy keveset, majd folytattam az utat.
+Gyors szelfi után indultam tovább Kvamba. Ott beugrottam egy KIWI-be, mert a korábbi meggondolatlan vinstrai kitérő során csak egy benzinkútig jutottam el, ahol nem találtam normális ennivalót. Persze ez is egy kis kitérőt jelentett, de akkor már nem foglalkoztam ezzel. Megebédeltem, pihentem egy keveset, majd folytattam az utat.\
+\
+A norvég falvakat és városkákat járva feltűnt egy érdekes szokás. Sok településen találkoztam olyan postaládákkal, amelyeket szépen kipingáltak. Mindenféle kis képek láthatók rajtuk: háziállatok, mesebeli lények, farmok, stb. Csak az út második felétől kezdtem fotózni őket, de így is akad pár érdekes alkotás, amiket a galériában láthattok.\
+Esetleg van köztetek valaki, aki tudja, hogy ez országos jelenség, vagy inkább csak a Szent Olaf-út mentén jellemző? Kíváncsi lennék, mi áll a háttérben! :) \
+Neked melyik a kedvenced?
 
 Limbóhintó vagy magasugrás: ez a két lehetőség várt rám a következő szakaszon, ha tovább akartam jutni. Valamiért a környék összes fája úgy döntött, hogy a zarándokokat megtréfálandó egyenesen az ösvényre dől. Döntenem kellett, hogy alattuk kúszok át, vagy átmászok rajtuk. Egyikhez sem volt sok kedvem, úgyhogy inkább kerültem egyet.
 
