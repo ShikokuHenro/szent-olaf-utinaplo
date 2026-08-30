@@ -14,7 +14,7 @@ intro_label: Előszó
 intro_text: >-
   Sosem írtam útinaplót és nem is gondoltam volna, hogy valaha fogok. Azonban
   miután végigjártam a Szent Olaf zarándokutat úgy éreztem, hogy talán megéri
-  papírra vetni az kalandokat, a felkészülést, és összegezni a tapasztalatokat.
+  papírra vetni a kalandokat, a felkészülést, és összegezni a tapasztalatokat.
   Elsősorban magamnak írtam, hogy amikor fakulni kezdenek az emlékek elő tudjam
   venni. De ha  valakinek hasznára válik, vagy néhányan esetleg kedvet kapnak
   ehhez a csodás utazáshoz miatta, az külön örömmel töltene el.
