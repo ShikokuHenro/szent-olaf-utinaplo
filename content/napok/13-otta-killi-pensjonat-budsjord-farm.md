@@ -39,12 +39,13 @@ gallery:
 videos:
   - url: https://youtube.com/shorts/vLx564iCRn8
   - url: https://youtube.com/shorts/O1UNnjkCveo
+  - url: https://youtu.be/PYl0TzrCgMc
   - url: https://youtube.com/shorts/gVZAQOsvLKk
   - url: https://youtube.com/shorts/GgkhdRneLCQ
   - url: https://youtu.be/DtWpDwJ3paY
   - url: https://youtube.com/shorts/Gsh2oIFgLo4?feature=share
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛗ</span>eglepő, de nem voltam annyira fáradt a tegnapi majd’ 50 kilométeres gyaloglástól – annak ellenére sem, hogy ez volt a legnagyobb táv, amit egyetlen nap alatt valaha megtettem. Éreztem, hogy itt-ott kicsit szúr, kicsit sajog, de semmi szokatlan nem volt.
 

@@ -37,8 +37,8 @@ videos:
   - url: https://youtube.com/shorts/eooTh3j9l1E?feature=share
   - url: https://youtube.com/shorts/L303B8g3G9E
   - url: https://youtube.com/shorts/2eE4XfUcozY
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛃ</span>ól aludtam, a bárányok egész éjjel hallgattak. Reggel még bedobtam a pénzt a becsületkasszába, és nekivágtam az útnak. Lágyan ereszkedett a murvás földút a hegyről lefelé, továbbra is a kis hegyi patak kanyarulatait követve. Éreztem, hogy a mai egy könnyű menet lesz. Talán túl könnyű is? Arról szó sem lehet! – gondoltam. A gyapjas négylábúakat kerülgetve megszületett az elhatározás: speedrun!
 

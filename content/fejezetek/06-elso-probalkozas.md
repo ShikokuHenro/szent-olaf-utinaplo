@@ -36,6 +36,8 @@ gallery:
     caption: A keleti ágon legtöbbször csak a földön ülve lehetett pihenni és enni.
       2025-ös fotó.
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111548641423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span>lőször 2025-ben vágtam neki a Szent Olaf-útnak. Akkor a Gudbrandsdalsleden keleti ágán indultam el, de ahogy a bevezetőben is írtam: nagyjából 270 km után fel kellett adnom.
 

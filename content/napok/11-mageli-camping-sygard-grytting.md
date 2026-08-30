@@ -69,8 +69,8 @@ videos:
   - url: https://youtube.com/shorts/J9qPpib-8OM
   - url: https://youtube.com/shorts/phuwZGp_HBU
   - url: https://youtube.com/shorts/65JFauNJk9M
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span>lőző este a kempingben új tervet szőttem. Az eredeti elképzelés szerint még 13 nap gyaloglás várt volna rám – azaz naponta átlagosan 28 kilométer. A tegnapi érzéseim miatt viszont ez nem tűnt elfogadhatónak számomra. Kis számolgatás után arra jutottam, hogy elég lesz nekem 9 nap Nidarosig. Így már egy embert próbálóbb, napi átlag 42 kilométer gyaloglást igénylő útiterv volt előttem az asztalon – és ez az új kihívás izgalommal töltött el!
 

@@ -56,8 +56,8 @@ videos:
   - url: https://youtube.com/shorts/QXtdTLh5Yjc
   - url: https://youtube.com/shorts/m2f6x9l-dPQ
   - url: https://youtube.com/shorts/2iQdln-T_EI
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚠ</span>elhős időben indultam reggel fél hétkor a gyönyörű tóparti sétányon. Rögtön az út elején két útonálló fogadott, de hamar kiderült, hogy nem túl elkötelezettek: egy kis vakarászás után békében továbbengedtek, sőt még azt is hagyták, hogy felvételt készítsek róluk.
 

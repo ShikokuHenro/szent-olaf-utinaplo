@@ -42,6 +42,8 @@ gallery:
     src: /assets/img/útvonal_IMG_20260623_080358.webp
     caption: Zarándokszámlálós útjelző.
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111540673423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span> Szent Olaf-úton jóval kevesebb a szállás, mint a Caminón, de azért azt sem mondhatom, hogy a senki földjén vezetne át a zarándokút. Szerintem mindenképpen érdemes előre megtervezni az utat, mert egy jó terv komoly biztonságérzetet ad. Viszont nem kell görcsösen ragaszkodni hozzá, hiszen az élet sokszor közbeszól. Én például 23 naposra terveztem a túrát, de végül 19 nap alatt megjártam az utat Oslótól Trondheimig. Nem mintha siettem volna: egyszerűen csak annyira belejöttem, hogy kényelmes volt és jól esett többet menni.
 

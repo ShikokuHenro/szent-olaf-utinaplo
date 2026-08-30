@@ -6,6 +6,8 @@ teaser: Egy méltatlanul ismeretlen zarándokút.
 ready: true
 gallery: []
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span>mikor elkezdtem tervezgetni a zarándoklatot, feltűnt, hogy míg a Szent Jakab-útról szóló beszámolók között még El Acebo városkájának legutolsó szürke palacserepéről is beszámolt már legalább egy honfitársunk, addig a Szent Olaf-útról gyakorlatilag nincs komoly magyar nyelvű írás. Egy-két nyúlfarknyi cikket találtam ugyan, de a jobb beszámolók és az igazán hasznos infók főleg angolul érhetők el. Ezzel persze nincs semmi gond, de úgy gondoltam, hogy lenne helye egy részletesebb, magyar nyelvű útibeszámolónak is.
 

@@ -52,8 +52,8 @@ videos:
   - url: https://youtu.be/stog4WRg_ks
   - url: https://youtube.com/shorts/zHc0Do10NYg?feature=share
   - url: https://youtube.com/shorts/PKjfleN51vA?feature=share
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span> felkelő nap fénye hosszú árnyékot rajzolt mögém a békésen kanyargó hegyi ösvényre. Csendben ballagtam sötét követőm előtt, a távoli, hófödte csúcsok látványától megbabonázva.
 

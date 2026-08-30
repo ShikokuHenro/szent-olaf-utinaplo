@@ -79,6 +79,8 @@ gallery:
     src: /assets/img/felszereles_veger-s11-10000-mah.webp
     caption: " VEGER S11 10 000 mAh powerbank - könnyű és éppen elég kapacitás."
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111538093423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span>lőre szeretném leszögezni: nem vagyok profi túrázó, nincs többéves tapasztalatom azzal kapcsolatban, hogy a különböző terepviszonyokhoz milyen felszerelés illik a legjobban. Ebben a fejezetben nem útmutatót akarok adni a tökéletes túracsomag összeállításához, csupán a saját tapasztalataimat szeretném megosztani.
 

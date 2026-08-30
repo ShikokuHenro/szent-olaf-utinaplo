@@ -6,6 +6,8 @@ teaser: Miért nem a Shikoku Henro, a Via Podiensis, vagy a régi szerelem?
 ready: true
 gallery: []
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛗ</span>iután hazatértem az El Caminóról, szinte nem telt el úgy hónap, hogy ne gondoltam volna arra, milyen jó lenne visszatérni. Ha egy harmatos mezőn keltem át, ha megláttam egy régi kőkerítést, vagy ha meghallgattam a Csillagút szerelmesei című nótát, mindig nagyot dobbant a szívem. Ilyenkor egy pillanatra újra az úton éreztem magam.
 

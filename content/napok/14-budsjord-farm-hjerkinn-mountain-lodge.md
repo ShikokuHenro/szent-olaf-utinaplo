@@ -67,8 +67,8 @@ videos:
   - url: https://youtube.com/shorts/y9VfzCXNc8U?feature=share
   - url: https://youtube.com/shorts/3BHkO0GITFw?feature=share
   - url: https://youtube.com/shorts/VgkujaKgtFg?feature=share
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚺ</span>a őszinte akarok lenni, Dovre hegyei komoly szerepet játszottak abban, hogy ezt a zarándokutat választottam – még úgy is, hogy amikor elindultam, szinte semmi pontosat nem tudtam róluk.
 

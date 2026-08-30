@@ -37,5 +37,19 @@ document.addEventListener('DOMContentLoaded', async () => {
       </div>`;
   }).join('');
 
+  // Facebook-poszt link a XII. fejezethez
+  try {
+    const ch = await loadChapter('12-fejezet');
+    const fbBtn = document.getElementById('fb-comment-btn');
+
+    if (fbBtn && ch.data.facebook_url) {
+      fbBtn.href = ch.data.facebook_url;
+      fbBtn.textContent = ch.data.facebook_label || 'Kommenteld a Facebookon';
+      fbBtn.hidden = false;
+    }
+  } catch (e) {
+    console.error('A Facebook-link betöltése nem sikerült:', e);
+  }
+
   initScrollReveal();
 });

@@ -50,8 +50,8 @@ videos:
   - url: https://youtube.com/shorts/hX5pnduC9R8
   - url: https://youtube.com/shorts/Wr5nNHllfZc
   - url: https://www.youtube.com/watch?v=WJmXzZFwp5w
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚺ</span>űvös, borús reggelre ébredtem. Az Achillesem cudar állapotban volt: szinte minden lépésnél éreztem, ahogy a körülötte lévő, duzzadt és vélhetően gyulladt szövetben mozog az ín. Amellett, hogy meglehetősen fájt, kifejezetten kellemetlen, furcsa érzés volt – korábban sosem tapasztaltam ilyet.
 

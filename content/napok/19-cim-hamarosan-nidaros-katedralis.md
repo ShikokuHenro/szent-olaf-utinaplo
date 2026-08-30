@@ -40,8 +40,8 @@ videos:
   - url: https://youtube.com/shorts/6wUWYifP-zs
   - url: https://youtu.be/eIP9t9pFrvQ
   - url: https://youtube.com/shorts/SAPS_i1a2KI?feature=share
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span>z is eljött: az utolsó nap!\
 Talán mondanom sem kell, hogy eléggé izgatott voltam, így nem sokáig aludtam. Fél négykor már ébren voltam, kiosontam a közös hálóteremből, és a konyhában pakoltam össze a dolgaimat, hogy ne zavarjam a többieket.

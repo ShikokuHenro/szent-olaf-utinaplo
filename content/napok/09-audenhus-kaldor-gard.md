@@ -67,8 +67,8 @@ videos:
   - url: https://youtube.com/shorts/mgP4mi67tmo
   - url: https://youtube.com/shorts/BGR_e5Mq9y8
   - url: https://youtube.com/shorts/plmsJr5Wku0
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚾ</span>agy nap volt a mai: ma visszatértem arra az ösvényre, amin már tavaly is jártam. Mondjuk a járás szó erős túlzás: 2025-ben inkább csak cammogtam, az ereimben keringő ibuprofen mennyiségétől függően hol lassan, hol még lassabban...
 

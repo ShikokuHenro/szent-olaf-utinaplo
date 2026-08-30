@@ -49,8 +49,8 @@ gallery:
 videos:
   - url: https://www.youtube.com/shorts/MdgeJ5ylCQQ
   - url: https://www.youtube.com/watch?v=Ez8MKDXcumY
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛗ</span>a is gyönyörű az idő! Indulás 7:45-kor: kipihenten, magabiztos léptekkel vágtam neki a napnak. Vártam némi izomlázat, ízületi fájdalmat, vagy bármit, ami egy ilyen zarándoklat elején törvényszerű, de igazából semmi ilyesmit nem tapasztaltam.
 

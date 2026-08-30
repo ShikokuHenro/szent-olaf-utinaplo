@@ -37,8 +37,8 @@ videos:
   - url: https://youtu.be/XFEckzC4wkA
   - url: https://www.youtube.com/shorts/f6uFA_hLDRs
   - url: https://youtube.com/shorts/Sa5plmJrwsw?feature=share
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚺ</span>angulatos, ködös időben indultam; nagyon nosztalgikus volt, a Camino reggeleire emlékeztetett.
 

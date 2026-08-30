@@ -34,8 +34,8 @@ gallery:
 videos:
   - url: https://www.youtube.com/shorts/qwvq7_03awQ
   - url: https://youtu.be/EjHsOY39V48
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛁ</span>gen! \
 Tegnap még épp időben cselekedtem: a tapasz tette a dolgát, nem engedte tovább gyűrődni-nyíródni a bőrömet, így reggelre sem lett vízhólyagom. 

@@ -24,6 +24,8 @@ gallery:
     src: /assets/img/img_20260627_115701.jpg
     caption: Szárított kajától a plüss pézsmatulokig - ami tettszik!
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111540673423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span> szeretném jelezni: különleges kulináris beszámolóra senki ne számítson ebben a fejezetben. Ennek alapvetően két oka van: egyrészt mivel növényi étrenden vagyok sok hagyományos norvég étel nem jöhetett szóba. Másrészt az árakra is oda kellett figyelnem, hiszen sajnos nem állt rendelkezésemre végtelen költségvetés.
 

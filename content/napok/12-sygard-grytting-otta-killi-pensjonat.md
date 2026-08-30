@@ -73,8 +73,8 @@ videos:
   - url: https://youtube.com/shorts/A7adTNYo2iM
   - url: https://youtube.com/shorts/hr4yxMYZH_o
   - url: https://youtube.com/shorts/1vedS3QF5bE
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚾ</span>em mondom, hogy nem éreztem meg a tegnapi 42 kilométert, de fél óra gyaloglás után mintha elfújták volna minden fáradtságomat.
 

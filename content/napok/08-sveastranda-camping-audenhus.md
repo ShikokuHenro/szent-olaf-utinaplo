@@ -46,8 +46,8 @@ videos:
   - url: https://youtube.com/shorts/vHzDv_OVX2Y
   - url: https://youtube.com/shorts/npxCSwPrjhE
   - url: https://youtube.com/shorts/UuzjzCD4MsM
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span>z előző napi esőtől vizes aljnövényzet barátságtalanul hajlott rá az ösvényre reggel, amikor útnak indultam. Ilyen helyeken egy hosszú, vízálló nadrágban sokkal kellemesebb a gyaloglás, de én a rövidnadrágomban haladtam tovább. Nem izgattam magam: a bakancsom frissen volt waxolva, egy kis vizes lábszár meg nem a világ. A csaláncsípések pedig kifejezetten pezsdítően hatottak! \
 \

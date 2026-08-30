@@ -80,8 +80,8 @@ videos:
   - url: https://youtube.com/shorts/MUzgJgfO3vA
   - url: https://youtube.com/shorts/nhKsxGqBJCQ
   - url: https://youtube.com/shorts/saeJNxStkEI
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚠ</span>él hatkor keltem, hatkor már úton voltam. Ismét egy nyugisabb, mindössze 25 kilométeres etap várt rám – egy olyan szakasz, amit már jól ismertem. Ezen a részen kellett feladnom 2025-ben, ezért a mai nap különleges jelentőséggel bírt számomra.
 

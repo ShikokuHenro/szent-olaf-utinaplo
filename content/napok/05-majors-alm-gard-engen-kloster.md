@@ -36,8 +36,8 @@ videos:
   - url: https://youtube.com/shorts/onl1xsiN5V4
   - url: https://youtube.com/shorts/hRBD2xK8suw
   - url: https://youtube.com/shorts/BM2EL_K0rN0
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛗ</span>egint egy szép nap vette kezdetét: az idő csodálatos, a levegő kristálytiszta volt. Az út egy fennsíkszerű magaslatra vitt, ahonnan messzire el lehetett látni. Körös-körül gyönyörűen hullámzó, zöld táj fogadott dombokkal, tanyákkal, falvakkal és fenyvesekkel. A távolban kéklő hegyek büszkén magasodva óvták ezt a békés világot. Az ég olyan széles volt, mint a végtelen óceán, és olyan közelinek tűnt, hogy úgy éreztem, ha kicsit magasabbra nyújtóznék, elérném akár a mennyeket is. De nekem haladnom kellett tovább – a mennyek megvárnak.
 

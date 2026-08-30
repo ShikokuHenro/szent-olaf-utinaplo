@@ -33,6 +33,8 @@ gallery:
   - erzekeny: false
     src: /assets/img/boltiárak_IMG_20260618_080524.webp
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111540673423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛖ</span>bben a fejezetben az árak a 2026. júniusi állapotot tükrözik, amikor 1 norvég korona (NOK) nagyjából 33 forintot ért.
 

@@ -6,6 +6,8 @@ teaser: Edzés, tesztelés és három elhasznált bakancs.
 ready: true
 gallery: []
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111538093423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛊ</span>okan azt gondolják, hogy egy hetekig tartó zarándoklat különleges képességeket, vagy komoly felkészülést igényel. Elárulom: ez nem így van. Mielőtt megszületett bennem az elhatározás, hogy kimegyek a Szent Olaf-útra, nem túráztam rendszeresen, és a mozgás is kimerült heti 3-4 elliptikus trénerezésben és alkalmankénti súlyzózásban. 
 

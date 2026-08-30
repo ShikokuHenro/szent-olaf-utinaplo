@@ -16,6 +16,8 @@ gallery:
   - src: /assets/img/100_0083.jpg
     caption: Santiago katedrálisa, nem kicsi!
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛈ</span>aulo Coelho egyik könyve inspirálta egy régi ismerősömet, Janetht, aki a kilencvenes évek elején – amikor a Szent Jakab-út még messze nem volt ennyire ismert és kiépített – igazi badass módjára, westerncsizmában és hosszú bőrkabátban járta végig a Caminót. Tőle hallott róla a bátyám, aki szintén teljesítette az utat, és végül rajta keresztül jutott el hozzám is a zarándoklat gondolata.
 

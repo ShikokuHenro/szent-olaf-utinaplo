@@ -30,8 +30,8 @@ gallery:
     caption: Amúgy szép szállás ez!
 videos:
   - url: https://youtube.com/shorts/ASkDV6vjM-4
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span> gépem 12:30-kor érkezett meg az Oslo-Gardermoen repülőtérre, ahonnan várt még rám egy rövid vonatozás Oslo központjába. A vasútállomástól nem messze található a Szent Olaf-út hivatalos kezdőpontja, a Szent Halvard katedrális romjainál. Szintén a közelben van az Oslói Püspöki Iroda, ahol meg lehet vásárolni a zarándokútlevelet 50 koronáért. Itt adják meg az első pecsétet, valamint pár kedves szót és jó tanácsot is az útra. Én a 2025-ös útlevelemet használtam, így őket most nem látogattam meg újra –  nem is tudtam volna, mert csak hétköznapokon vannak nyitva!
 

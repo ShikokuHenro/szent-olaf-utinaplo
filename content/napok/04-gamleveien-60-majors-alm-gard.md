@@ -40,8 +40,8 @@ gallery:
 videos:
   - url: https://youtube.com/shorts/mbueQ4nj3CQ
   - url: https://youtube.com/shorts/mrGtP26nb4Y
-facebook_url: ""
-facebook_label: ""
+facebook_url: https://www.facebook.com/photo/?fbid=122111544729423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᛏ</span>egnap már éreztem – mikor a Bønsnes-templomtól menekültem –, hogy valami nem stimmel a bal Achilles-ínammal. Ma reggelre viszont már eléggé elkezdett fájni. Ezért sem örültem, amikor rájöttem, hogy a szálláson felejtettem a túrabotjaimat, amikért vissza kellett mennem. Hiába no, szokni kell még a felszerelést! Szerencsére pár kilométer megtétele után a fájdalom szinte teljesen megszűnt, így reméltem, hogy ezzel meg is úsztam a dolgot. Mint később kiderült, korántsem ez történt.
 

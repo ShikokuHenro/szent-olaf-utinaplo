@@ -9,6 +9,8 @@ gallery:
   - src: /assets/img/image.jpg
     caption: Sajnos ennél frissebb statisztikát nem találtam
 videos: []
+facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000
+facebook_label: Hozzászólok
 ---
 <span class="rune-large">ᚨ</span> zarándokút Szent Olafról (II. Olaf Haraldsson, 995–1030), Norvégia védőszentjéről kapta a nevét – ami, gondolom, nem túl meglepő.
 
