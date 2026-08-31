@@ -41,14 +41,17 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     const ch = await loadChapter('12-fejezet');
     const fbBtn = document.getElementById('fb-comment-btn');
-
     if (fbBtn && ch.data.facebook_url) {
       fbBtn.href = ch.data.facebook_url;
       fbBtn.textContent = ch.data.facebook_label || 'Kommenteld a Facebookon';
       fbBtn.hidden = false;
     }
+    const headerBg = document.getElementById('header-bg');
+    if (headerBg && ch.data.header_kep) {
+      headerBg.style.backgroundImage = `linear-gradient(180deg, rgba(20,29,24,.35) 0%, rgba(20,29,24,.55) 55%, rgba(20,29,24,.96) 100%), url('${ch.data.header_kep}')`;
+    }
   } catch (e) {
-    console.error('A Facebook-link betöltése nem sikerült:', e);
+    console.error('A Facebook-link / fejléc-kép betöltése nem sikerült:', e);
   }
 
   initScrollReveal();

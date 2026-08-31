@@ -46,6 +46,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.title = `${roman}. ${title} — Szent Olaf zarándokút`;
   document.getElementById('eyebrow').textContent = `Fejezet ${roman}`;
   document.getElementById('chapter-title').textContent = title;
+  const headerBg = document.getElementById('header-bg');
+if (headerBg && ch.data.header_kep) {
+  headerBg.style.backgroundImage = `linear-gradient(180deg, rgba(20,29,24,.35) 0%, rgba(20,29,24,.55) 55%, rgba(20,29,24,.96) 100%), url('${ch.data.header_kep}')`;
+}
   document.getElementById('chapter-body').innerHTML = marked.parse(renderStyledText(ch.body || ''));
   openLinksInNewTab(document.getElementById('chapter-body'));
 

@@ -23,6 +23,7 @@ collections:
       - {label: "Rövid előnézeti szöveg (a főoldali listában)", name: "teaser", widget: "text"}
       - {label: "Kész — jelenjen meg kattinthatóként a főoldalon", name: "ready", widget: "boolean", default: false}
       - {label: "Fejezet szövege", name: "body", widget: "markdown"}
+      - {label: "Fejléc kép (opcionális)", name: "header_kep", widget: "image", required: false, media_folder: "/assets/img/{{slug}}", hint: "Erős, teljes szélességű háttérkép a fejezet címe mögé, sötét átmenettel."}
       - label: "Galéria"
         name: "gallery"
         widget: "list"

@@ -1,9 +1,10 @@
 ---
 roman: III
 order: 3
-title: Miért született ez az útinapló
+title: Miért született ez az útinapló?
 teaser: Egy méltatlanul ismeretlen zarándokút.
 ready: true
+header_kep: /assets/img/miért-született-ez-az-útinapló/1788165306_tmp_img_20260617_121806.webp
 gallery: []
 videos: []
 facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000

@@ -4,6 +4,7 @@ order: 2
 title: Én és a zarándoklatok
 teaser: Az El Caminótól a szabadság-érzésig.
 ready: true
+header_kep: /assets/img/én-és-a-zarándoklatok/1788165305_tmp_img_20260616_164921.webp
 gallery:
   - src: /assets/img/100_0005.jpg
     caption: Első nap a Caminón.

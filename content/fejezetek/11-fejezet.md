@@ -4,6 +4,7 @@ order: 11
 title: Árak és költségvetés
 teaser: Mennyi az annyi, Norvégia tényleg megfizethetetlen?
 ready: true
+header_kep: /assets/img/árak-és-költségvetés/1788166673_tmp_img_20260616_162115.webp
 gallery:
   - erzekeny: false
     src: /assets/img/szallasok_zarandoklajstrom_fekvo.png
@@ -76,7 +77,7 @@ Arról sem tudok információval szolgálni, hogy a múzeumi, tárlat, stb. bel�
 
 ## Étkezés költség
 
-Ételre és italra összesen kb. 5.500 koronát költöttem, ami nagyjából 180.000 Ft. Van ebben benzinkúton vásárolt 2.000 Ft-os kávé és fancy szálláson elfogyasztott 5.000 Ft-os kézműves sör is. Ezek nyilván nem elengedhetetlen dolgok, de akkor és ott meglehetősen jól estek. Az étel-ital kiadásokat szerintem simán le lehet tornázni 4.500 koronára (kb. 150.000 Ft), ha az ember lemond az energiaitalról, a kávéról, a csokikáról és a sörről (ennyi erővel persze otthon i
+Ételre és italra összesen kb. 5.500 koronát költöttem, ami nagyjából 180.000 Ft. Van ebben benzinkúton vásárolt 2.000 Ft-os kávé és fancy szálláson elfogyasztott 5.000 Ft-os kézműves sör is. Ezek nyilván nem elengedhetetlen dolgok, de akkor és ott meglehetősen jól estek. Az étel-ital kiadásokat szerintem simán le lehet tornázni 4.500 koronára (kb. 150.000 Ft), ha az ember lemond az energiaitalról, a kávéról, a csokikáról és a sörről - ennyi erővel persze otthon is maradhatunk :)
 
 ## Szállás költség
 

@@ -4,6 +4,7 @@ order: 8
 title: Felszerelés
 teaser: "Bakancstól a leukotape-ig: hasznos és haszontalan holmik."
 ready: true
+header_kep: /assets/img/felszerelés/1788165307_tmp_img_20260620_064512.webp
 gallery:
   - src: /assets/img/felszereles_2025.png
     caption: Ennyi cuccal nekiállhattam volna házallni, már gazdag lennék! :)

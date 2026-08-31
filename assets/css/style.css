@@ -237,6 +237,7 @@ footer{
 
 /* ---------- FEJEZET-OLDAL ---------- */
 .chapter-header{
+  min-height:30vh;
   padding:9vh 6vw 5vh;
   border-bottom:1px solid rgba(140,150,134,.16);
 }
@@ -247,12 +248,14 @@ footer{
   text-transform:uppercase;
   display:inline-block;
   margin-bottom:2.4rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.9);
 }
 .chapter-header .eyebrow{
   font-family:var(--font-mono);
   color:var(--moss-400);
   font-size:13px;
   letter-spacing:.14em;
+  text-shadow: 0 1px 8px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.9);
   margin-bottom:.8rem;
 }
 .chapter-header h1{
@@ -555,6 +558,9 @@ footer{
   background-size:cover;
   background-position:bottom center;
   pointer-events:none;
+}
+.header-bg:not(.profile-bg){
+  background-position: center center;
 }
 /* ===== "Megtekintése semmilyen korosztálynak nem ajánlott" — kényes tartalmú galéria-képek ===== */
 .gallery-item.sensitive img{

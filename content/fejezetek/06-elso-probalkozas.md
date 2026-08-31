@@ -4,6 +4,7 @@ order: 6
 title: Az első próbálkozás
 teaser: A kudarc és a tanulságok.
 ready: true
+header_kep: /assets/img/az-első-próbálkozás/1788165312_tmp_img_20260626_063812.webp
 gallery:
   - erzekeny: false
     src: /assets/img/img_20250717_114220.jpg

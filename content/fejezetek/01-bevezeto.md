@@ -4,6 +4,7 @@ order: 1
 title: Bevezető
 teaser: "Két éven át tartó kaland: egy terv, egy bukás és egy siker."
 ready: true
+header_kep: /assets/img/bevezető/1788165303_tmp_bevezeto.webp
 gallery: []
 videos: []
 facebook_url: ""

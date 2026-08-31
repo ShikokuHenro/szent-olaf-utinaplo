@@ -4,6 +4,7 @@ order: 9
 title: Boltok és étkezés
 teaser: BIG100, Salt Lakris és a vasárnapi boltzár.
 ready: true
+header_kep: /assets/img/boltok-és-étkezés/1788165312_tmp_img_20260627_070634.webp
 gallery:
   - erzekeny: false
     src: /assets/img/img_20260618_075634.webp

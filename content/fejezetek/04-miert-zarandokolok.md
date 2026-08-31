@@ -4,6 +4,7 @@ order: 4
 title: Miért a Szent Olaf-út?
 teaser: Miért nem a Shikoku Henro, a Via Podiensis, vagy a régi szerelem?
 ready: true
+header_kep: /assets/img/miért-a-szent-olaf-út/1788165308_tmp_img_20260620_143914.webp
 gallery: []
 videos: []
 facebook_url: https://www.facebook.com/photo/?fbid=122111534337423092&set=pb.61592692769592.-2207520000

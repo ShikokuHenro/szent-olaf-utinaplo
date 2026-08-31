@@ -4,6 +4,7 @@ order: 7
 title: A felkészülés
 teaser: Edzés, tesztelés és három elhasznált bakancs.
 ready: true
+header_kep: /assets/img/a-felkészülés/1788165310_tmp_img_20260623_050307.webp
 gallery: []
 videos: []
 facebook_url: https://www.facebook.com/photo/?fbid=122111538093423092&set=pb.61592692769592.-2207520000

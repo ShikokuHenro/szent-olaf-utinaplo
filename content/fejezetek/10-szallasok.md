@@ -4,6 +4,7 @@ order: 10
 title: Útvonaltervezés és tájékozódás
 teaser: Újratervezés és eltévedések.
 ready: true
+header_kep: /assets/img/útvonaltervezés-és-tájékozódás/1788165313_tmp_img_20260627_111253.webp
 gallery:
   - erzekeny: false
     src: /assets/img/útvonal_IMG_20260617_113147.webp

@@ -4,6 +4,7 @@ order: 13
 title: Epilógus
 teaser: Merre tovább?
 ready: true
+header_kep: /assets/img/epilógus/1788166676_tmp_img_20260630_053339.webp
 gallery: []
 videos: []
 facebook_url: https://www.facebook.com/photo?fbid=122111556081423092&set=pb.61592692769592.-2207520000

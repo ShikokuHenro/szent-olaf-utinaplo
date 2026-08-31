@@ -5,6 +5,7 @@ title: A Szent Olaf-út rövid története
 teaser: Ki volt Szent Olaf, és hogyan jött létre Észak-Európa egyik legfontosabb
   zarándokútja.
 ready: true
+header_kep: /assets/img/a-szent-olaf-út-rövid-története/1788165311_tmp_img_20260623_095440.webp
 gallery:
   - src: /assets/img/image.jpg
     caption: Sajnos ennél frissebb statisztikát nem találtam
